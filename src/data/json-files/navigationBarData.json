@@ -5,10 +5,10 @@
 		"alt": "The tailwind astro theme"
 	},
 	"navItems": [
-		{ "name": "Thesis Project", "link": "/work" },
-		{ "name": "Collaboration", "link": "/services" },
-		{ "name": "Competencies", "link": "/about-v1" },
-		{ "name": "Bibliography", "link": "/blog" },
+		{ "name": "Thesis Project (w)", "link": "/work" },
+		{ "name": "Collaboration (s)", "link": "/services" },
+		{ "name": "Competencies (a)", "link": "/about-v1" },
+		{ "name": "Bibliography", "link": "/biblio" },
 		{
 			"name": "Pages",
 			"link": "#",

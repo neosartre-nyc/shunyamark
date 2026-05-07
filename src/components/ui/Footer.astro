@@ -28,8 +28,10 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 			<Row classes="mb-12">
 				<Col span="6">
 					<p class="footer__about">
-						{footerAbout.aboutText}
-						<a href={`mailto:${footerAbout.aboutLink}`}>{footerAbout.aboutLink}</a>
+						<span class="footer__about-text">{footerAbout.aboutText}</span>
+						<a href={`mailto:${footerAbout.aboutLink}`} class="footer__about-link">
+							{footerAbout.aboutLink}
+						</a>
 					</p>
 				</Col>
 				<Col span="3" classes="hidden lg:block" />
@@ -79,7 +81,15 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 		@apply relative z-1 mx-auto px-6 in-[.section--fullwidth]:max-w-full [.section--fullwidth_&]:md:px-0;
 	}
 	.footer__about {
-		@apply font-headings text-4xl font-medium text-neutral-50 in-[.dark]:text-neutral-950 md:text-6xl lg:text-8xl dark:text-neutral-950 [.light_&]:text-neutral-50;
+		@apply font-headings font-medium text-neutral-50 in-[.dark]:text-neutral-950 md:text-5xl lg:text-6xl dark:text-neutral-950 [.light_&]:text-neutral-50;
+	}
+
+	.footer__about-text {
+		@apply text-3xl md:text-4xl lg:text-5xl; /* Main text size */
+	}
+
+	.footer__about-link {
+		@apply text-2xl md:text-3xl lg:text-4xl; /* Smaller link size */
 	}
 	.footer__about a {
 		@apply underline decoration-neutral-500 decoration-wavy decoration-[0.1rem] underline-offset-8 transition-all hover:underline-offset-12 dark:decoration-neutral-400;

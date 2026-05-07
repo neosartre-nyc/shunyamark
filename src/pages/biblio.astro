@@ -1,0 +1,64 @@
+---
+// Bibliography Page
+// ------------
+// Description: The annotated works
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - Blocks
+import BasicHeroCTA from '../components/blocks/hero/BasicHeroCTA.astro'
+import type { Entry } from '../config/type'
+
+import citeListRaw from '../data/json-files/citationData.json' with { type: 'json' }
+const citeList: Entry[] = citeListRaw // or citeListRaw.default if needed
+
+// Content
+// - SEO
+const SEO = {
+	title: 'MFA | Biblio',
+	description: 'Research'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<BasicHeroCTA
+		title="Annotated Bibliography"
+		type="vertical"
+		titleSpan="12"
+		classes="pt-40! [&_h1]:max-w-[920px] lg:[&_p]:columns-2 [&_.card]:max-w-full!"
+	/>
+	<ul id="citations" class="space-y-12">
+	{citeList.map((cite) => (
+		<li class="citation-item">
+		<!-- Citation with hanging indent -->
+		<p class="citation hanging-indent">
+			{cite.citation}
+		</p>
+		
+		<!-- Annotation -->
+		<p class="annotation mt-6 pl-8 border-l-4 border-gray-300 text-slate-400 leading-relaxed">
+			{cite.annotation}
+		</p>
+		</li>
+	))}
+	</ul>	
+</Layout>
+
+<style>
+	.citation-item {
+		margin-bottom: 3rem;
+	}
+
+	.hanging-indent {
+		text-indent: -2.5em;     /* Pulls first line back */
+		padding-left: 2.5em;     /* Indents the rest */
+		margin-bottom: 1.25rem;
+	}
+
+	/* Optional: Make it look even more professional */
+	.hanging-indent {
+		font-size: 1.05rem;
+		line-height: 1.65;
+	}
+</style>
