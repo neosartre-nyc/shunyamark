@@ -8,6 +8,7 @@
 import Layout from '../layouts/Layout.astro'
 // - Blocks
 import BasicHeroCTA from '../components/blocks/hero/BasicHeroCTA.astro'
+import Main from '../components/ui/Main.astro'
 import type { Entry } from '../config/type'
 
 import citeListRaw from '../data/json-files/citationData.json' with { type: 'json' }
@@ -28,6 +29,7 @@ const SEO = {
 		titleSpan="12"
 		classes="pt-40! [&_h1]:max-w-[920px] lg:[&_p]:columns-2 [&_.card]:max-w-full!"
 	/>
+	<Main>
 		<ul id="citations" class="space-y-12 mt-20 mr-30 ml-30 mb-16">
 			{citeList.map((cite) => (
 				<li class="citation-item">
@@ -41,8 +43,9 @@ const SEO = {
 			{cite.annotation}
 		</p>
 		</li>
-	))}
-	</ul>	
+		))}
+		</ul>
+	</Main>	
 </Layout>
 
 <style>

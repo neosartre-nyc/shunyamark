@@ -14,7 +14,7 @@ import Slider from '../components/blocks/slider/BrandSlider.astro'
 import Work from '../components/blocks/work/WorkBasic.astro'
 import Testimonials from '../components/blocks/testimonials/TestimonialsAlt.astro'
 import Blog from '../components/blocks/blog/PostCards.astro'
-import TwoColVideoSection from '../components/blocks/video/TwoColVideoSection.astro'
+import TwoColImageSection from '../components/blocks/image/TwoColImageSection.astro'
 import Card from '../components/ui/cards/Card.astro'
 
 // Content
@@ -26,10 +26,10 @@ const SEO = {
 // - Hero
 const hero = {
 	title: 'Natalie Reuchlein',
-  	titleSize:"text-4xl md:text-7xl lg:text-8xl",
+	titleSize: 'text-4xl md:text-7xl lg:text-8xl',
 	text: "I'd like to share the work I've produced, the lessons learned, and the accomplishments achieved.",
-	type:'vertical',
-	classes:"py-32",
+	type: 'vertical',
+	classes: 'py-32'
 }
 // - Statistics
 const statistics = {
@@ -39,26 +39,19 @@ const statistics = {
 
 const thesisSection = {
 	leftCardContent: [
-	'With over three decades of experience in the industry, my future intentions center on bridging strategic leadership with creative innovation. Having led creative teams of 45 professionals across technology, transportation, and apparel markets while managing budgets exceeding $3M, I am positioned to pursue executive-level roles where I can shape organizational creative direction at scale. My pursuit of an MFA in Media Design alongside my MBA reflects my intention to merge business acumen with cutting-edge design thinking, positioning myself for leadership roles that require both creative vision and commercial strategy.',
+		'With over three decades of experience in the industry, my future intentions center on bridging strategic leadership with creative innovation. Having led creative teams of 45 professionals across technology, transportation, and apparel markets while managing budgets exceeding $3M, I am positioned to pursue executive-level roles where I can shape organizational creative direction at scale. My pursuit of an MFA in Media Design alongside my MBA reflects my intention to merge business acumen with cutting-edge design thinking, positioning myself for leadership roles that require both creative vision and commercial strategy.',
 
-	'Looking forward, I aim to leverage my cross-industry expertise to drive transformative creative initiatives. Having directed creative strategy for 12+ projects that generated $6M in revenue, I intend to continue scaling impact through mentorship, consulting, or founding my own venture that combines my Fortune 500 experience with my deepening design credentials. My track record of improving speed-to-market by 40% indicates I will focus on streamlining creative operations while maintaining quality, possibly through innovative workflows or emerging technologies that align with my ongoing media design studies',
+		'Looking forward, I aim to leverage my cross-industry expertise to drive transformative creative initiatives. Having directed creative strategy for 12+ projects that generated $6M in revenue, I intend to continue scaling impact through mentorship, consulting, or founding my own venture that combines my Fortune 500 experience with my deepening design credentials. My track record of improving speed-to-market by 40% indicates I will focus on streamlining creative operations while maintaining quality, possibly through innovative workflows or emerging technologies that align with my ongoing media design studies'
 	],
-	rightCardVideo: '/assets/images/image-profile.webp'
+	rightCardImage: '/public/assets/images/image-profile.webp'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<!-- <Hero title={hero.title} text={hero.text} />
-	<Statistics text={statistics.text} />
-	<Services />
-	<Slider />
-	<Work />
-	<Testimonials />
-	<Blog /> -->
 	<Hero title={hero.title} titleSpan="12" classes="[&_h1]:max-w-[1200px]" />
-	<TwoColVideoSection classes="pt-0! overflow-visible!" video={thesisSection.rightCardVideo}>
+	<TwoColImageSection classes="pt-0! overflow-visible!" image={thesisSection.rightCardImage}>
 		<Card>
 			{thesisSection.leftCardContent.map((paragraph) => <p class="mb-9! last:mb-0">{paragraph}</p>)}
 		</Card>
-	</TwoColVideoSection>
+	</TwoColImageSection>
 </Layout>

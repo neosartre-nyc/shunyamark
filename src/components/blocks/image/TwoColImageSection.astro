@@ -1,0 +1,50 @@
+---
+// Two Col Image Section
+// Description: Two column section with content on the left and image on the right
+
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+
+// UI Components
+import Decoration from '../../ui/Decor.astro'
+import Kursor from '../../ui/kursor.astro'
+
+// Props
+type Props = {
+	image?: string
+	alt?: string
+	classes?: string
+}
+
+const {
+	image = 'https://picsum.photos/id/1015/800/1000',
+	alt = 'Featured image',
+	classes
+} = Astro.props
+---
+
+<Section classes={classes}>
+	<Row>
+		<Col span="4">
+			<slot />
+		</Col>
+		<Col span="8">
+			<div
+				class="relative overflow-hidden border border-neutral-100 lg:cursor-none dark:border-neutral-600"
+			>
+				<img
+					src={image}
+					alt={alt}
+					width="800"
+					height="1000"
+					class="max-h-[830px] w-full object-cover"
+					loading="lazy"
+				/>
+				<Decoration type="all" />
+			</div>
+		</Col>
+	</Row>
+</Section>
+
+<Kursor />
