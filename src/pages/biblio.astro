@@ -28,9 +28,9 @@ const SEO = {
 		titleSpan="12"
 		classes="pt-40! [&_h1]:max-w-[920px] lg:[&_p]:columns-2 [&_.card]:max-w-full!"
 	/>
-	<ul id="citations" class="space-y-12">
-	{citeList.map((cite) => (
-		<li class="citation-item">
+		<ul id="citations" class="space-y-12 mt-20 mr-30 ml-30 mb-16">
+			{citeList.map((cite) => (
+				<li class="citation-item">
 		<!-- Citation with hanging indent -->
 		<p class="citation hanging-indent">
 			{cite.citation}
@@ -47,6 +47,8 @@ const SEO = {
 
 <style>
 	.citation-item {
+		margin-left: 8rem;
+		margin-right: 8rem;
 		margin-bottom: 3rem;
 	}
 
