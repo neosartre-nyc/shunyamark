@@ -18,7 +18,7 @@ type Props = {
 }
 
 const {
-	image = '/src/assets/images/image-profile.webp',
+	image = '/image-profile.webp',
 	alt = 'Featured image',
 	classes
 } = Astro.props
@@ -36,8 +36,8 @@ const {
 				<img
 					src={image}
 					alt={alt}
-					width="800"
-					height="1000"
+					width="600"
+					height="800"
 					class="max-h-[830px] w-full object-cover"
 					loading="lazy"
 				/>

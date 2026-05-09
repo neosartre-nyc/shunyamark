@@ -12,7 +12,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   site: "https://www.shunyamark.com",
   
-  output: 'server',        // or 'static' if you don't need SSR
+  output: 'static',        // or 'static' if you don't need SSR
   adapter: cloudflare({
     // Optional: platformProxy for better local dev
     platformProxy: {
