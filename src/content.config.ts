@@ -34,25 +34,25 @@ const work = defineCollection({
 				body: z.string()
 			})
 		})
-})
-
-const blog = defineCollection({
-	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
-	schema: () =>
-		z.object({
-			title: z.string(),
-			subtitle: z.string().optional(),
-			pubDate: z.date(),
-			author: z.string(),
-			description: z.string(),
-			image: z.string().optional(),
-			video: z.string().optional(),
-			imageThumbnail: z.string().optional(),
-			videoThumbnail: z.string().optional()
+	})
+	
+	const blog = defineCollection({
+		loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
+		schema: () =>
+			z.object({
+				title: z.string(),
+				subtitle: z.string().optional(),
+				pubDate: z.date(),
+				author: z.string(),
+				description: z.string(),
+				image: z.string().optional(),
+				video: z.string().optional(),
+				imageThumbnail: z.string().optional(),
+				videoThumbnail: z.string().optional()
+			})
 		})
-})
-
-export const collections = {
-	work,
-	blog
-}
+		
+	export const collections = {
+		work,
+		blog,
+	}

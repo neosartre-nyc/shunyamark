@@ -22,14 +22,14 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Toki - Agency Theme Built with Astro by Oxygenna',
+	siteTitle: 'Shunyamark - Natalie Masters Thesis',
 	siteDescription:
-		'Toki is a standout agency template with striking design, blazing speed, built for modern agencies and creatives',
+		'A representative set of portfolio',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo-light.webp',
 		srcDark: '/logo-dark.webp',
-		alt: 'Toki logo'
+		alt: 'NR logo'
 	},
 	canonical: true,
 	noindex: false,
