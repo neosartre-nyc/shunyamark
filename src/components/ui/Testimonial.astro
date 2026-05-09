@@ -10,7 +10,7 @@
 
 // Components
 // - UI
-import { Icon } from 'astro-icon/components'
+import { Icon } from '@twodft/astro-icon/components'
 
 // Content
 // - Props
@@ -56,7 +56,7 @@ const { blockquote, figcaption, classes, quoteClasses } = Astro.props
 		@apply relative z-10;
 	}
 	.testimonial__blockquote p {
-		@apply leading-12 font-headings pb-6 text-2xl text-neutral-950 lg:text-3xl dark:text-neutral-50;
+		@apply font-headings pb-6 text-2xl leading-12 text-neutral-950 lg:text-3xl dark:text-neutral-50;
 	}
 	.testimonial__figcaption {
 		@apply text-neutral-700 dark:text-neutral-200;
