@@ -27,10 +27,14 @@ const SEO = {
 }
 ---
 <Layout title={SEO.title} description={SEO.description}>
-	<YouTube
-  title="placeholder testing"
-  videoId="hjArVvT6lL8"
-/>
+
+	<div class="video-container">
+		<YouTube
+			title="placeholder testing"
+			videoId="hjArVvT6lL8"
+		/>
+		</div>
+
 	<BasicHeroCTA
 		title="Annotated Bibliography"
 		type="vertical"
@@ -58,6 +62,16 @@ const SEO = {
 </Layout>
 
 <style>
+
+	.video-container {
+	display: flex;
+	justify-content: center; /* horizontal centering */
+	align-items: center; /* vertical centering */
+	height: 600px; /* decreased height */
+	width: 800px; /* added width */
+	margin: 40px auto; /* added margins for better spacing */
+	}
+
 	.citation-item {
 		margin-left: 8rem;
 		margin-right: 8rem;
