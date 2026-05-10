@@ -6,36 +6,45 @@
 // Components
 // - Layout
 import Layout from '../layouts/Layout.astro'
+
 // - Blocks
 import BasicHeroCTA from '../components/blocks/hero/BasicHeroCTA.astro'
 import Main from '../components/ui/Main.astro'
 import type { Entry } from '../config/type'
+import {YouTube} from 'astro-lazy-youtube-embed'
+
 
 import citeListRaw from '../data/json-files/citationData.json' with { type: 'json' }
 const citeList: Entry[] = citeListRaw // or citeListRaw.default if needed
 
 // Content
+
+
 // - SEO
 const SEO = {
 	title: 'MFA | Biblio',
 	description: 'Research'
 }
 ---
-
 <Layout title={SEO.title} description={SEO.description}>
+	<YouTube
+  title="placeholder testing"
+  videoId="hjArVvT6lL8"
+/>
 	<BasicHeroCTA
 		title="Annotated Bibliography"
 		type="vertical"
 		titleSpan="12"
 		classes="pt-40! [&_h1]:max-w-[920px] lg:[&_p]:columns-2 [&_.card]:max-w-full!"
 	/>
+	<div></div>
 	<Main>
 		<ul id="citations" class="space-y-12 mt-20 mr-30 ml-30 mb-16">
 			{citeList.map((cite) => (
 				<li class="citation-item">
 		<!-- Citation with hanging indent -->
 		<p class="citation hanging-indent">
-			{cite.citation}
+			{cite.citation}	
 		</p>
 		
 		<!-- Annotation -->
