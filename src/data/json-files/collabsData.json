@@ -30,5 +30,13 @@
 			"From subtle microinteractions to full-blown scroll animations, we help your site feel more alive, more polished, and way more fun to use."
 		],
 		"image": "/assets/services/service-04.webp"
+	},
+	{
+		"title": "Motion",
+		"text": [
+			"Movement matters. We add motion where it counts — not just to impress, but to guide, delight, and communicate.",
+			"From subtle microinteractions to full-blown scroll animations, we help your site feel more alive, more polished, and way more fun to use."
+		],
+		"image": "/assets/services/service-04.webp"
 	}
 ]

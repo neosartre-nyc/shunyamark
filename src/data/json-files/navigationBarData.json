@@ -6,7 +6,7 @@
 	},
 	"navItems": [
 		{ "name": "Thesis Project (w)", "link": "/work" },
-		{ "name": "Collaboration (s)", "link": "/services" },
+		{ "name": "Collaboration", "link": "/collabs" },
 		{ "name": "Competencies (a)", "link": "/about-v1" },
 		{ "name": "Bibliography", "link": "/biblio" },
 		{

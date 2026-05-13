@@ -1,0 +1,47 @@
+---
+// Services Page
+// ------------
+// Description: The services page is a page that displays all the services.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - Blocks
+import Hero from '../components/blocks/hero/CollabGrid.astro'
+import ServicesList from '../components/blocks/collabs/CollabsList.astro'
+import VideoSection from '../components/blocks/video/VideoSection.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'MFA | Collaboration',
+	description: 'Collaboration'
+}
+// - Hero
+const hero = {
+	title: 'Collaboration',
+	text: "Perspectives open the design to possible opportunities",
+	description:
+		''
+}
+// - Services List
+const collabsList = {
+	title: 'Scourges from designer cognitive biases',
+	text: ''
+}
+// Video
+const video = {
+	video: 'https://oxygenna-themes.b-cdn.net/toki-astro/videos/about-us-video.mp4'
+}
+// Brand Slider
+const brandSlider = {
+	title: 'Brands we’ve teamed up with',
+	text: 'From future unicorns to up-and-coming legends, we work with brands that aren’t afraid to make noise.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={hero.title} text={hero.text} description={hero.description} />
+	<VideoSection video={video.video} classes="pt-0!" />
+	<ServicesList title={collabsList.title} text={collabsList.text} />
+</Layout>
