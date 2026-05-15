@@ -1,10 +1,10 @@
 ---
-// Services List
+// collabs List
 // ------------
-// Description: A services section with a title, a subtitle, a description and a grid of services
+// Description: A collabs section with a title, a subtitle, a description and a grid of collabs
 // Properties:
-// - title: The title of the services section
-// - text: The subtitle of the services section
+// - title: The title of the collabs section
+// - text: The subtitle of the collabs section
 
 // Components
 // - Layout
@@ -18,7 +18,7 @@ import Card from '../../ui/cards/Card.astro'
 
 // Content
 // - Data
-import servicesData from '../../../data/json-files/collabsData.json'
+import collabsData from '../../../data/json-files/collabsData.json'
 // - Props
 const { title = '', text = '' } = Astro.props
 ---
@@ -26,7 +26,7 @@ const { title = '', text = '' } = Astro.props
 <TitleSection title={title} text={text} classes="pb-0!" />
 <Section stickyCol classes="overflow-visible! ">
 	{
-		servicesData.map((service: any, index: number) => (
+		collabsData.map((collab: any, index: number) => (
 			<Row classes="mb-12 ">
 				<Col span="4" classes="h-full min-w-[420px] max-w-[460px] w-full ">
 					<div class="sticky top-32 hidden lg:block">
@@ -34,21 +34,21 @@ const { title = '', text = '' } = Astro.props
 							<span class="text-primary-500 hidden xl:block!">
 								{String(index + 1).padStart(2, '0')}
 							</span>
-							{service.title}
+							{collab.title}
 						</h3>
 					</div>
 				</Col>
 				<Col span="8" classes="h-full w-full grow">
 					<Card
-						title={service.title}
+						title={collab.title}
 						cardHeaderClasses="block lg:hidden!"
 						classes="h-full w-full"
 						cardBodyClasses="h-full lg:pt-7.5! "
-						cardMediaClasses="lg:order-2 h-[400px]"
+						cardMediaClasses="lg:order-2 h-[420px]"
 						orientation="horizontal"
-						image={service.image}
+						image={collab.image}
 					>
-						{service.text.map((text: string) => (
+						{collab.text.map((text: string) => (
 							<p class="relative z-10 text-lg">{text}</p>
 						))}
 					</Card>

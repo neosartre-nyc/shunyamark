@@ -134,7 +134,7 @@ html {
 	@apply scroll-smooth antialiased;
 }
 body {
-	@apply font-body bg-neutral-50 bg-[url('/bgs/light.webp')] bg-size-[200px] text-base leading-7 text-neutral-500 selection:bg-neutral-950 selection:text-neutral-50 in-[.dark]:text-neutral-400 in-[.light]:text-neutral-500 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:bg-[url('/bgs/dark.webp')] dark:text-neutral-400 dark:selection:bg-neutral-50 dark:selection:text-neutral-950;
+	@apply font-body bg-neutral-50 bg-[url('/bgs/light.webp')] bg-size-[200px] text-base leading-7 text-neutral-950 selection:bg-neutral-950 selection:text-neutral-50 in-[.dark]:text-neutral-600 in-[.light]:text-neutral-950 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:bg-[url('/bgs/dark.webp')] dark:text-neutral-600 dark:selection:bg-neutral-50 dark:selection:text-neutral-950;
 }
 
 /* Main typography */
@@ -249,7 +249,19 @@ form button {
 
 /* Global basic styling */
 .basic-text {
-	@apply [&_blockquote_p]:font-headings [&_blockquote]:relative [&_blockquote]:mb-7.5 [&_blockquote]:border-[#EBEBEB] [&_blockquote]:bg-[#f5f5f5] [&_blockquote]:p-7.5 [&_blockquote]:pt-24 [&_blockquote]:transition-colors [&_blockquote]:duration-400 [&_blockquote]:before:absolute [&_blockquote]:before:top-7.5 [&_blockquote]:before:left-7.5 [&_blockquote]:before:z-0 [&_blockquote]:before:block [&_blockquote]:before:text-7xl [&_blockquote]:before:text-neutral-300 [&_blockquote]:before:opacity-50 [&_blockquote]:before:content-['❝'] [&_blockquote]:hover:border-neutral-100 [&_blockquote]:hover:bg-white [&_blockquote]:dark:border-neutral-800 [&_blockquote]:dark:bg-neutral-900/40 [&_blockquote]:dark:hover:border-neutral-700 [&_blockquote]:dark:hover:bg-neutral-900/90 [&_blockquote_p]:p-0! [&_blockquote_p]:pb-6 [&_blockquote_p]:text-2xl [&_blockquote_p]:leading-12 [&_blockquote_p]:text-neutral-950 [&_blockquote_p]:lg:text-3xl [&_blockquote_p]:dark:text-neutral-50 [&_h1:not(:first-child)]:mt-24 [&_h2:not(:first-child)]:mt-24 [&_h3:not(:first-child)]:mt-24 [&_h4:not(:first-child)]:mt-12 [&_img]:rounded-sm [&_img]:border [&_img]:border-neutral-100 dark:[&_img]:border-neutral-600 [&_li]:mb-2 [&_li]:ml-4 [&_li]:pl-2 [&_li]:text-neutral-800 [&_li]:marker:text-neutral-500 [&_li]:dark:text-neutral-400 [&_li]:dark:marker:text-neutral-400 [&_ol_li]:list-decimal [&_pre]:mb-6 [&_pre]:rounded-sm [&_pre]:border [&_pre]:border-neutral-950 [&_pre]:bg-neutral-800! [&_pre]:p-6 [&_pre]:text-base [&_pre]:outline-hidden [&_pre]:dark:border-neutral-800! [&_pre]:dark:bg-neutral-900! [&_ul_li]:list-['+'] [&_ul_li]:marker:font-medium;
+  @apply prose prose-neutral dark:prose-invert max-w-none 
+         prose-blockquote:border-neutral-50 
+         prose-blockquote:bg-neutral-900 
+         prose-blockquote:pt-16
+         dark:prose-blockquote:border-neutral-800 
+         dark:prose-blockquote:bg-neutral-900/50;
+
+  /* Only add the custom quote mark */
+  & blockquote::before {
+    content: '❝';
+    @apply absolute -top-2 left-6 text-7xl text-neutral-300 opacity-50
+           dark:text-neutral-700;
+  }
 }
 
 /* Scroll animations */

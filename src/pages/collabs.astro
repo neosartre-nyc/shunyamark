@@ -8,7 +8,7 @@
 import Layout from '../layouts/Layout.astro'
 // - Blocks
 import Hero from '../components/blocks/hero/CollabGrid.astro'
-import ServicesList from '../components/blocks/collabs/CollabsList.astro'
+import CollabsList from '../components/blocks/collabs/CollabsList.astro'
 import VideoSection from '../components/blocks/video/VideoSection.astro'
 
 // Content
@@ -24,10 +24,10 @@ const hero = {
 	description:
 		''
 }
-// - Services List
+// - Collabs List
 const collabsList = {
 	title: 'Scourges from designer cognitive biases',
-	text: ''
+	text: 'ummm...not that we judge.'
 }
 // Video
 const video = {
@@ -43,5 +43,5 @@ const brandSlider = {
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={hero.title} text={hero.text} description={hero.description} />
 	<VideoSection video={video.video} classes="pt-0!" />
-	<ServicesList title={collabsList.title} text={collabsList.text} />
+	<CollabsList title={collabsList.title} text={collabsList.text} />
 </Layout>
