@@ -1,0 +1,35 @@
+{
+	"footerAbout": {
+		"aboutText": "Get out of the rut? Let’s talk.",
+		"aboutLink": "natalie@dangerousangelscreative.com"
+	},
+	"footerColumns": [
+		{
+			"subCategories": [
+				{
+					"subCategory": "Our culture",
+					"subCategoryLink": "/about-v1"
+				},
+				{
+					"subCategory": "Journal",
+					"subCategoryLink": "/blog"
+				},
+				{
+					"subCategory": "Services",
+					"subCategoryLink": "/services"
+				},
+				{
+					"subCategory": "Contact",
+					"subCategoryLink": "/contact"
+				},
+				{
+					"subCategory": "Terms",
+					"subCategoryLink": "/terms"
+				}
+			]
+		}
+	],
+	"subFooter": {
+		"copywriteText": "2026© Dangerous Angels Creative"
+	}
+}

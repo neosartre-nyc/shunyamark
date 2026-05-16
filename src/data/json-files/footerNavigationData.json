@@ -7,24 +7,24 @@
 		{
 			"subCategories": [
 				{
-					"subCategory": "Our culture",
-					"subCategoryLink": "/about-v1"
+					"subCategory": "",
+					"subCategoryLink": ""
 				},
 				{
-					"subCategory": "Journal",
-					"subCategoryLink": "/blog"
+					"subCategory": "",
+					"subCategoryLink": ""
 				},
 				{
-					"subCategory": "Services",
-					"subCategoryLink": "/services"
+					"subCategory": "",
+					"subCategoryLink": ""
 				},
 				{
-					"subCategory": "Contact",
-					"subCategoryLink": "/contact"
+					"subCategory": "",
+					"subCategoryLink": ""
 				},
 				{
-					"subCategory": "Terms",
-					"subCategoryLink": "/terms"
+					"subCategory": "",
+					"subCategoryLink": ""
 				}
 			]
 		}
