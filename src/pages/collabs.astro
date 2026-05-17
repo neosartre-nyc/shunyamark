@@ -14,6 +14,7 @@ import Section from '../components/ui/Section.astro'
 import Row from '../components/ui/Row.astro'
 import Col from '../components/ui/Col.astro'
 import BasicCard from '../components/ui/cards/Card.astro'
+import { YouTube } from 'astro-lazy-youtube-embed'
 
 // Content
 // - SEO
@@ -45,7 +46,9 @@ const brandSlider = {
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={hero.title} text={hero.text} description={hero.description} />
-	<VideoSection video={video.video} classes="pt-0!" />
+	<div class="video-container">
+		<YouTube title="Collaboration" videoId="TILBqmZYq-Y" />
+	</div>
 	<CollabsList title={collabsList.title} text={collabsList.text} />
 	<Section>
 		<Row>
