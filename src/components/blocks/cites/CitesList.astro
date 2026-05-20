@@ -14,7 +14,7 @@ import Col from '../../ui/Col.astro'
 // - Blocks
 import TitleSection from '../basic/TitleSection.astro'
 // - UI
-import Card from '../../ui/cards/Card.astro'
+import BasicCard from '../../ui/cards/Card.astro'
 
 // Content
 // - Data
@@ -23,26 +23,21 @@ import citesData from '../../../data/json-files/citesData.json'
 const { title = '', text = '' } = Astro.props
 ---
 <TitleSection title={title} text={text} classes="pb-0!" />
-<Section stickyCol classes="overflow-visible! ">
+<Section>
 	{
 		citesData.map((cite) => (
 			<Row classes="mb-12 ">
 				<Col start="3" span="8" classes="h-full w-full grow">
-					<Card
+					<BasicCard 
+						decoration="all" style="transparent"
 						title={cite.cite}
-						cardHeaderClasses="block lg:hidden!"
-						classes="h-full w-full"
-						cardBodyClasses="h-full lg:pt-7.5! lg:max-w-fill w-full"
-						cardMediaClasses="lg:order-2 h-[420px]"
-						orientation="horizontal"
 					>
 						<div class="w-full space-y-4">
-							<p class="relative z-10 text-2xl w-full break-words">{cite.cite}</p>
 							{cite.anno.map((anno: string) => (
 								<p class="relative z-10 text-lg w-full break-words">{anno}</p>
 							))}
 						</div>
-					</Card>
+					</BasicCard>
 				</Col>
 			</Row>
 		))
