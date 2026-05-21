@@ -1,0 +1,289 @@
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+
+@source inline("{lg:,}col-{span-{1,2,3,4,5,6,7,8,9,10,11,12},span-mobile-{1,2,3,4,5,6,7,8,9,10,11,12}}");
+@source inline("{lg:,}col-span-{1,2,3,4,5,6,7,8,9,10,11,12}");
+@source inline("{lg:,}col-start-{1,2,3,4,5,6,7,8,9,10,11,12}");
+@source inline("{lg:,}h-{0,2,3,4,6,8,12,16,24,32}");
+@source inline("{lg:,}text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl}");
+@source inline("font-{thin,extralight,light,normal,medium,semibold,bold,extrabold,black}");
+@source inline("text-{left,center,right}");
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	/* Colors */
+	/* Primary */
+	--color-primary-50: #fef2f3;
+	--color-primary-100: #fee2e3;
+	--color-primary-200: #fdcbce;
+	--color-primary-300: #fba6ab;
+	--color-primary-400: #f6737a;
+	--color-primary-500: #ed464f;
+	--color-primary-600: #da2831;
+	--color-primary-700: #b71e26;
+	--color-primary-800: #971d24;
+	--color-primary-900: #7e1e23;
+	--color-primary-950: #590e12;
+	/* Neutral */
+	--color-neutral-50: #a2fdff;
+	--color-neutral-100: #92e8ea;
+	--color-neutral-200: #82d2d6;
+	--color-neutral-300: #73bdc1;
+	--color-neutral-400: #63a7ac;
+	--color-neutral-500: #539298;
+	--color-neutral-600: #437d83;
+	--color-neutral-700: #33676e;
+	--color-neutral-800: #245259;
+	--color-neutral-900: #143c45;
+	--color-neutral-950: #042730;
+
+	/* Fonts */
+	--font-headings: 'Bitter-VariableFont', serif;
+	--font-body: 'NotoSans-VariableFont', sans-serif;
+
+	/* Spacing */
+	--spacing-7.5: 30px;
+	--spacing-15: 60px;
+
+	/* Animations */
+	--animate-dropdown: dropdown 300ms ease-in-out forwards;
+	--animate-fadeUp: fadeUp 500ms ease-in-out forwards;
+	--animate-marquee: marquee 500ms ease-in-out forwards;
+	--animate-marqueeFollowup: marqueefollowup 500ms ease-in-out forwards;
+
+	@keyframes dropdown {
+		0% {
+			transform: 'translateY(-1rem)';
+			opacity: 0;
+		}
+		100% {
+			transform: 'translateY(0)';
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadeInColorTransparentLight {
+		'100%' {
+			backdropfilter: 'blur(4px)';
+			background: 'rgba(255, 255, 255, .9)';
+		}
+	}
+	@keyframes fadeInColorTransparentDark {
+		'100%' {
+			backdropfilter: 'blur(4px)';
+			background: 'rgba(15, 23, 42, .9)';
+		}
+	}
+	@keyframes fadeInColorTransparentDark {
+		'100%' {
+			backdropfilter: 'blur(4px)';
+			background: 'rgba(15, 23, 42, .9)';
+		}
+	}
+	@keyframes marquee {
+		'0%' {
+			transform: 'translateX(0%)';
+		}
+		'100%' {
+			transform: 'translateX(-100%)';
+		}
+	}
+	@keyframes marqueefollowup {
+		'0%' {
+			transform: 'translateX(100%)';
+		}
+		'100%' {
+			transform: 'translateX(0%)';
+		}
+	}
+	@keyframes fadeUp {
+		'0%' {
+			transform: 'translateY(1rem)';
+			opacity: 0;
+		}
+		'100%' {
+			transform: 'translateY(0)';
+			opacity: 1;
+		}
+	}
+}
+
+@font-face {
+	font-family: 'Bitter-Variable';
+	src:
+		url('/fonts/bitter/Bitter-VariableFont.woff') format('woff'),
+		url('/fonts/bitter/Bitter-VariableFont.ttf') format('truetype');
+	font-weight: 200 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSans-Variable';
+	src:
+		url('/fonts/notosans/NotoSans-VariableFont.woff') format('woff'),
+		url('/fonts/notosans/NotoSans-VariableFont.ttf') format('truetype');
+	font-weight: 200 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+/* Layout rules */
+html {
+	@apply scroll-smooth antialiased;
+}
+body {
+	@apply font-body bg-neutral-50 bg-[url('/bgs/light.webp')] bg-size-[200px] text-base leading-7 text-neutral-950 selection:bg-neutral-950 selection:text-neutral-50 in-[.dark]:text-neutral-600 in-[.light]:text-neutral-950 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:bg-[url('/bgs/dark.webp')] dark:text-neutral-600 dark:selection:bg-neutral-50 dark:selection:text-neutral-950;
+}
+
+/* Main typography */
+p {
+	@apply mb-6 last:mb-0;
+}
+.text-lead {
+	@apply text-[21px] leading-9 font-light;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	@apply font-headings text-neutral-950 last:mb-0 in-[.dark]:text-neutral-50 in-[.light]:text-neutral-950 dark:text-neutral-50;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+	font-weight: inherit;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	@apply mb-6 font-medium;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	@apply mb-4 font-medium;
+}
+
+h1,
+.h1 {
+	@apply text-6xl lg:text-[7rem] 2xl:text-9xl;
+}
+
+h2,
+.h2 {
+	@apply text-4xl lg:text-6xl lg:leading-18;
+}
+
+h3,
+.h3 {
+	@apply text-2xl lg:text-3xl lg:leading-9;
+}
+
+h4,
+.h4 {
+	@apply text-xl lg:text-2xl;
+}
+
+h5,
+.h5 {
+	@apply text-lg lg:text-xl;
+}
+
+h6,
+.h6 {
+	@apply text-base lg:text-lg;
+}
+main a {
+	@apply text-primary-800 hover:text-primary-900 dark:text-primary-200 dark:hover:text-primary-100;
+}
+.small {
+	@apply text-sm font-normal text-neutral-400 dark:text-neutral-500;
+}
+blockquote,
+.blockquote {
+	@apply text-3xl leading-12 font-light;
+}
+
+ul li,
+ol li {
+	@apply marker:text-primary-700 dark:marker:text-primary-300 mb-2 ml-4 pl-2;
+}
+ul li {
+	@apply list-['◉'] marker:font-medium;
+}
+ol li {
+	@apply list-decimal;
+}
+form input {
+	@apply relative mb-6 h-12 w-full border border-neutral-200 px-4 text-neutral-800 placeholder-transparent transition-all outline-none autofill:bg-white invalid:border-red-500 invalid:text-red-500 focus:border-neutral-500 focus:outline-none invalid:focus:border-red-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-neutral-50 disabled:text-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:autofill:bg-neutral-900 dark:disabled:bg-neutral-600;
+}
+form textarea {
+	@apply relative mb-6 w-full border border-neutral-200 px-4 text-neutral-800 placeholder-transparent -backdrop-hue-rotate-30 transition-all outline-none autofill:bg-white invalid:border-red-500 invalid:text-red-500 focus:border-neutral-500 focus:outline-none invalid:focus:border-red-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-neutral-50 disabled:text-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:autofill:bg-neutral-800 dark:disabled:bg-neutral-600;
+}
+form label {
+	@apply font-headings text-sm;
+}
+form button {
+	@apply inline-flex h-12 cursor-pointer items-center justify-center gap-2 bg-neutral-900 bg-[url('/bgs/dark.webp')] bg-size-[200px] px-6 text-sm font-medium tracking-wide whitespace-nowrap text-white transition duration-300 hover:bg-neutral-950 focus:bg-neutral-950 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-neutral-300 disabled:bg-neutral-300 disabled:shadow-none;
+}
+
+/* Global basic styling */
+.basic-text {
+  @apply prose prose-neutral dark:prose-invert max-w-none 
+         prose-blockquote:border-neutral-50 
+         prose-blockquote:bg-neutral-900 
+         prose-blockquote:pt-16
+         dark:prose-blockquote:border-neutral-800 
+         dark:prose-blockquote:bg-neutral-900/50;
+
+  /* Only add the custom quote mark */
+  & blockquote::before {
+    content: '❝';
+    @apply absolute -top-2 left-6 text-7xl text-neutral-300 opacity-50
+           dark:text-neutral-700;
+  }
+}
+
+/* Scroll animations */
+/* To disable scroll animations remove the class "scroll-animation" from root html in the layout file. To make a col not scroll animated add the class "no-scroll-animation" */
+.scroll-animation .col:not(.no-scroll-animation) {
+	@apply translate-y-6 scale-y-110 transform opacity-0 blur-sm transition-all duration-1000 nth-1:delay-50 nth-10:delay-725 nth-11:delay-800 nth-12:delay-875 nth-2:delay-125 nth-3:delay-200 nth-4:delay-275 nth-5:delay-350 nth-6:delay-425 nth-7:delay-500 nth-8:delay-575 nth-9:delay-650 [&.scroll-animated]:translate-y-0 [&.scroll-animated]:scale-y-100 [&.scroll-animated]:opacity-100 [&.scroll-animated]:blur-none;
+}
+
+/* Button hover effect */
+.button .decor > * {
+	@apply transition-all duration-300;
+}
+.button:hover .decor .decor__top-left {
+	@apply -translate-x-1 -translate-y-1;
+}
+.button:hover .decor .decor__top-right {
+	@apply translate-x-1 -translate-y-1;
+}
+.button:hover .decor .decor__bottom-left {
+	@apply -translate-x-1 translate-y-1;
+}
+.button:hover .decor .decor__bottom-right {
+	@apply translate-x-1 translate-y-1;
+}

@@ -104,6 +104,8 @@
         "zombified",
         "Zoubi"
     ],
-    "MD013": false
-    
+    "MD013": false    ,
+    "[markdown]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-remark"
+  }
 }

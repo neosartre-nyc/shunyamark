@@ -6,7 +6,7 @@ On the surface the onlyness statement appears easy, formulaic, and simple.
 
 ### Onlyness Formula
 
-> [product/service/business] is the only [category] in the [location] that provides [benefit(s)] to [target audience] through [features].
+> \[product/service/business] is the only \[category] in the \[location] that provides \[benefit(s)] to \[target audience] through \[features].
 
 ### Colony Of Voice Onlyness Statement
 
@@ -36,7 +36,7 @@ These elements of design are strategic communication and should derived from pur
 ### Color
 
 The color palette was chosen is not just representative of the culture, in it's softness, earthiness, with coolness (achieved with a gray tint), but as what the culture was not. It is not, the corporatized version of societal ideas and solutions painted in bold primary colors.\
-![alt text](../../assets/images/mdm__ColonyOfVoiceColor.webp)![alt text](../../assets/images/mdm__Toastmasters.webp)![alt text](../../assets/images/mdm__TedTalksColor.webp)![alt text](../../assets/images/mdm__NSA.webp)
+![alt text](/assets/images/mdm__ColonyOfVoiceColor.webp)![alt text](/assets/images/mdm__Toastmasters.webp)![alt text](/assets/images/mdm__TedTalksColor.webp)![alt text](/assets/images/mdm__NSA.webp)
 
 | Feature           | Colony of Voice (Original) | Toastmasters (Cool)    | TED talks (Bold)        | NSA(Muted)                 |
 | :---------------- | :------------------------- | :--------------------- | :---------------------- | :------------------------- |
@@ -48,21 +48,21 @@ The color palette was chosen is not just representative of the culture, in it's 
 
 Color palettes for websites in the tailwindcss designer philosophy, in consideration of light and dark views as well as the number of elements, has palette definitions that take key colors and gradates them in 11 shades or steps (Colors - Core Concepts, n.d.). These 11 can then be mapped to the types of elements including:
 
-- Background Color
-- Text Color
-- Text Decoration Color
-- Border Color
-- Outline Color
-- Color Of Box Shadows
-- Color Of Inset Box Shadows
-- Color Of Ring Shadows
-- Color Of Inset Ring Shadows
-- Accent Color Of Form Controls
-- Caret Color In Form Controls
-- Thumb Color's Scrollbar
-- Track Color's Scrollbar
-- Fill Color Of SVG Elements
-- Stroke Color Of SVG Elements
+* Background Color
+* Text Color
+* Text Decoration Color
+* Border Color
+* Outline Color
+* Color Of Box Shadows
+* Color Of Inset Box Shadows
+* Color Of Ring Shadows
+* Color Of Inset Ring Shadows
+* Accent Color Of Form Controls
+* Caret Color In Form Controls
+* Thumb Color's Scrollbar
+* Track Color's Scrollbar
+* Fill Color Of SVG Elements
+* Stroke Color Of SVG Elements
 
 Although not critical to this work, these expansions for visual clarity may significantly change the scope and concept of brand color palettes in the future and is used in this site design.
 

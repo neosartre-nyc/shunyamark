@@ -28,6 +28,12 @@ export default defineConfig({
     markdoc(),
   ],
 
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop',
+    }
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },

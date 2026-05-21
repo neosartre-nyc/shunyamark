@@ -1,18 +1,15 @@
 ---
-import { Image } from 'astro:assets'
-// Import the image as a module/object
-import enemyAsset from '../assets/images/earthsGreatestEnemy.webp'
 import Layout from '../layouts/Layout.astro'
 
 const SEO = {
-	title: 'Enemy',
-
+	title: 'Enemy'
 }
 ---
+
 <!doctype html>
 <html lang="en">
 	<Layout title={SEO.title}>
-        <style>
+		<!-- <style>
             /* Define the full screen layout using CSS */
             html,
             body {
@@ -35,14 +32,17 @@ const SEO = {
                 width: 100%;
                 height: 100%;
             }
-        </style>
+        </style> -->
 
-        <body>
-            <!-- Use a wrapper to define the full screen space -->
-            <div class="full-screen-image-container">
-                <!-- Use the official Astro Image component, applying the class instead of inline style -->
-                <Image src={enemyAsset} alt="Earths Greatest Enemy" class="full-screen-image" />
-            </div>
-        </body>
-    </Layout>
+		<body>
+			<!-- Use a wrapper to define the full screen space -->
+			<div class="full-screen-image-container">
+				<img
+					src="/assets/images/earthsGreatestEnemy.webp"
+					alt="Earths Greatest Enemy"
+					class="full-screen-image"
+				/>
+			</div>
+		</body>
+	</Layout>
 </html>

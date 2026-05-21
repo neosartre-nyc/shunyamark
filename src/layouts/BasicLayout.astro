@@ -9,13 +9,14 @@
 
 // Components
 // - Layout
-import Section from '../../ui/Section.astro'
-import Row from '../../ui/Row.astro'
-import Col from '../../ui/Col.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
 // - Blocks
-import TitleSection from '../basic/TitleSection.astro'
+import TitleSection from '../components/blocks/basic/TitleSection.astro'
 // - UI
-import Service from '../../ui/cards/CollabCard.astro'
+import CollabCard from '../components/ui/cards/CollabCard.astro'
+import Collabs from '../pages/collabs.astro'
 ---
 
 <TitleSection
@@ -26,7 +27,7 @@ import Service from '../../ui/cards/CollabCard.astro'
 <Section classes="pt-0!">
 	<Row>
 		<Col span="4">
-			<Service
+			<CollabCard
 				title="Design That Flows"
 				subtitle="Good design should feel invisible. We craft user experiences that just make sense and look awesome — no extra thinking required. From intuitive flows to pixel-perfect interactions, we make sure every tap, click, and scroll feels effortless."
 				link="/collabs"
@@ -37,7 +38,7 @@ import Service from '../../ui/cards/CollabCard.astro'
 		</Col>
 		<Col span="8" classes="flex flex-col gap-7.5">
 			<div class="flex flex-col gap-7.5 lg:flex-row">
-				<Service
+				<Collabs
 					title="Brands That Stick."
 					subtitle="Logos, colors, type — we craft the DNA of your brand so it shows up sharp, scroll-stopping, and unmistakably you."
 					link="/collabs"
@@ -45,7 +46,7 @@ import Service from '../../ui/cards/CollabCard.astro'
 					cardBodyClasses="h-full min-h-[220px] relative"
 					image="/assets/collabs/collab-02.webp"
 				/>
-				<Service
+				<Collabs
 					title="Code That Behaves."
 					subtitle="From quick-launch sites to fully custom builds, we make sure what you see is what actually works."
 					link="/collabs"
@@ -54,7 +55,7 @@ import Service from '../../ui/cards/CollabCard.astro'
 					image="/assets/collabs/collab-03.webp"
 				/>
 			</div>
-			<Service
+			<Collabs
 				title="Motion That Moves You."
 				subtitle="Animation brings brands to life — literally. We use motion to grab attention, tell stories, and make every experience feel like magic."
 				link="/collabs"
