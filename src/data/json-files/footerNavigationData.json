@@ -7,8 +7,8 @@
 		{
 			"subCategories": [
 				{
-					"subCategory": "",
-					"subCategoryLink": ""
+					"subCategory": "Enemy",
+					"subCategoryLink": "/enemy"
 				},
 				{
 					"subCategory": "",

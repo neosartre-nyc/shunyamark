@@ -2,44 +2,47 @@
 import { Image } from 'astro:assets'
 // Import the image as a module/object
 import enemyAsset from '../assets/images/earthsGreatestEnemy.webp'
----
+import Layout from '../layouts/Layout.astro'
 
+const SEO = {
+	title: 'Enemy',
+
+}
+---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Enemy</title>
-		<style>
-			/* Define the full screen layout using CSS */
-			html,
-			body {
-				margin: 0;
-				height: 100%; /* Ensure full height */
-				width: 100%;
-			}
+	<Layout title={SEO.title}>
+        <style>
+            /* Define the full screen layout using CSS */
+            html,
+            body {
+                margin: 0;
+                height: 100%; /* Ensure full height */
+                width: 100%;
+            }
 
-			/* Style the section/image container to fill the space */
-			.full-screen-image-container {
-				height: 100vh; /* Viewport Height = Full Screen Height */
-				width: 100%;
-				display: flex; /* Use flexbox for centering */
-				align-items: center; /* Vertically center the image */
-			}
+            /* Style the section/image container to fill the space */
+            .full-screen-image-container {
+                height: 100vh; /* Viewport Height = Full Screen Height */
+                width: 100%;
+                display: flex; /* Use flexbox for centering */
+                align-items: center; /* Vertically center the image */
+            }
 
-			/* Style the actual Image component itself */
-			.full-screen-image {
-				object-fit: cover; /* Crucial: Ensures the image covers the area without stretching */
-				width: 100%;
-				height: 100%;
-			}
-		</style>
-	</head>
-	<body>
-		<!-- Use a wrapper to define the full screen space -->
-		<div class="full-screen-image-container">
-			<!-- Use the official Astro Image component, applying the class instead of inline style -->
-			<Image src={enemyAsset} alt="Earths Greatest Enemy" class="full-screen-image" />
-		</div>
-	</body>
+            /* Style the actual Image component itself */
+            .full-screen-image {
+                object-fit: cover; /* Crucial: Ensures the image covers the area without stretching */
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <body>
+            <!-- Use a wrapper to define the full screen space -->
+            <div class="full-screen-image-container">
+                <!-- Use the official Astro Image component, applying the class instead of inline style -->
+                <Image src={enemyAsset} alt="Earths Greatest Enemy" class="full-screen-image" />
+            </div>
+        </body>
+    </Layout>
 </html>

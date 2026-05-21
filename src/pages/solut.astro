@@ -1,0 +1,17 @@
+---
+import { Content as Solutions } from '../content/markdown/thesisSolutions.md'
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/ui/cards/Card.astro'
+const SEO = {
+	title: 'Solutions'
+}
+---
+
+<!doctype html>
+<html lang="en">
+	<Layout title={SEO.title}>
+		<Card>
+			<Solutions />
+		</Card>
+	</Layout>
+</html>
