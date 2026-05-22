@@ -1,5 +1,5 @@
 {
-  "name": "astro-oxygenna-theme",
+  "name": "shunyamark",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -51,4 +51,5 @@
   "overrides": {
     "vite": "^7"
   }
+  
 }

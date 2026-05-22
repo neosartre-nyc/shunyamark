@@ -18,11 +18,11 @@ It is more critical than just a checkbox because it is the spearhead for the mar
 
 The Colony Of Voice onlyness statement went through an iterative process to reveal a clear niche or space for the brand in the marketplace.
 
-| Iterations                                                                                                                                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| COV is a public speaking organization.                                                                                                                                                                            |
-| COV is a public speaking organization in New York. (wait, just NY?) ...in the Northeast Region.                                                                                                                   |
-| COV is a public speaking organization .... (wait, is it just an organization? a coalition? a group?) ... a participatory venue.                                                                                   |
+| Iterations |
+| :--- |
+| COV is a public speaking organization. |
+| COV is a public speaking organization in New York. (wait, just NY?) ...in the Northeast Region. |
+| COV is a public speaking organization .... (wait, is it just an organization? a coalition? a group?) ... a participatory venue. |
 | COV ...are doers. (hold on, what does that even mean?) ...enabling idea creators to share their insights (with each other?) within a supportive culture and community. A.k.a. investors or a people who can help. |
 
 The final result is a combination of purpose and connection where the brand explains the value they bring to the table and appeal to a section of people in the marketplace.
@@ -35,16 +35,53 @@ These elements of design are strategic communication and should derived from pur
 
 ### Color
 
-The color palette was chosen is not just representative of the culture, in it's softness, earthiness, with coolness (achieved with a gray tint), but as what the culture was not. It is not, the corporatized version of societal ideas and solutions painted in bold primary colors.\
-![alt text](/assets/images/mdm__ColonyOfVoiceColor.webp)![alt text](/assets/images/mdm__Toastmasters.webp)![alt text](/assets/images/mdm__TedTalksColor.webp)![alt text](/assets/images/mdm__NSA.webp)
+The chosen color palette is not just representative of the culture, in it's softness, earthiness, with coolness (achieved with a gray tint), but as what the culture was not. It is not, the corporatized version of societal ideas and solutions painted in bold primary colors.
+ 
 
-| Feature           | Colony of Voice (Original) | Toastmasters (Cool)    | TED talks (Bold)        | NSA(Muted)                 |
-| :---------------- | :------------------------- | :--------------------- | :---------------------- | :------------------------- |
-| **Dominant Feel** | Warm, Earthy, Cozy         | Cool, Minimalist, Calm | High Contrast, Dramatic | Sophisticated, Deep, Muted |
-| **Temperature**   | Predominantly Warm         | Predominantly Cool     | Balanced/Aggressive     | Balanced/Deep              |
-| **Complexity**    | High (many mixed tones)    | Low (monochromatic)    | High (extreme contrast) | Medium (subtle richness)   |
+| Color Palettes| | | |
+| --- | --- | --- | --- |
+| ![alt text](/public/assets/images/mdm__ColonyOfVoiceColor.webp) | ![alt text](/public/assets/images/mdm__Toastmasters.webp) | ![alt text](/public//assets/images/mdm__TedTalksColor.webp) | ![alt text](/public/assets/images/mdm__NSA.webp)
 
+<br><br>
+
+### Comparison
+
+<table style="border-collapse: collapse; width: 100%">
+<thead>
+<tr>
+<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Feature</th>
+<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Colony of Voice (Original)</th>
+<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Toastmasters (Cool)</th>
+<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">TED talks (Bold)</th>
+<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">NSA(Muted)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top"><strong>Dominant Feel</strong></td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Warm, Earthy, Cozy</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Cool, Minimalist, Calm</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">High Contrast, Dramatic</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Sophisticated, Deep, Muted</td>
+</tr>
+<tr>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top"><strong>Temperature</strong></td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Predominantly Warm</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Predominantly Cool</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Balanced/Aggressive</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Balanced/Deep</td>
+</tr>
+<tr>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top"><strong>Complexity</strong></td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">High (many mixed tones)</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Low (monochromatic)</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">High (extreme contrast)</td>
+<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Medium (subtle richness)</td>
+</tr>
+</tbody>
+</table>
 (Google, 2026)
+<br><br>
 
 Color palettes for websites in the tailwindcss designer philosophy, in consideration of light and dark views as well as the number of elements, has palette definitions that take key colors and gradates them in 11 shades or steps (Colors - Core Concepts, n.d.). These 11 can then be mapped to the types of elements including:
 
@@ -80,7 +117,7 @@ There are designers and then there are logo designers. The history of logo funct
 
 ### Concept
 
-The concepts for the logo stemmed from biomimicry of the interdependent microcosm of bees, in terms of the hexagon, and the ideas focused on the individual speaker, in composition. Combining the two turned into a major challenge. At this level of visual metaphor a very simple approach was used to turn words into marks. This is a competency that will be continuous improve since it is an art not a science.
+The concepts for the logo stemmed from biomimicry of the interdependent microcosm of bees, in terms of the hexagon, and the ideas focused on the individual speaker, in composition. Combining the two turned into a major challenge. At this level of visual metaphor a very simple approach was used to turn words into marks. This is a competency that will be in continuous improvement since it is an art not a science.
 
 ### Selection
 
