@@ -1,18 +1,20 @@
 ---
 import { Content as Solutions } from '../content/markdown/thesisSolutions.md'
 import Layout from '../layouts/Layout.astro'
-import Card from '../components/ui/cards/Card.astro'
-import Col from '../components/ui/Col.astro'
+import Section from '../components/ui/Section.astro'
+// - SEO
 const SEO = {
-	title: 'Solutions'
+	title: 'Solution',
+	description:
+		""
 }
 ---
 
 <!doctype html>
 <html lang="en">
-	<Layout title={SEO.title}>
-			<Card>
-				<Solutions />
-			</Card>
+	<Layout title={SEO.title} description={SEO.description}>
+		<Section>
+			<Solutions class="m-8" />
+		</Section>
 	</Layout>
 </html>

@@ -6,11 +6,15 @@ On the surface the onlyness statement appears easy, formulaic, and simple.
 
 ### Onlyness Formula
 
-> \[product/service/business] is the only \[category] in the \[location] that provides \[benefit(s)] to \[target audience] through \[features].
+<br>
+
+> \[product/service/business] is the only \[category] in the \[location] that provides \[benefit(s)] to \[target audience] through \[features]. <br><br>
 
 ### Colony Of Voice Onlyness Statement
 
-> Colony of Voice is the only public speaking organization in the US Northeast Region that provides a participatory venue enabling idea creators to share their insights within a supportive culture and community.
+<br>
+
+> Colony of Voice is the only public speaking organization in the US Northeast Region that provides a participatory venue enabling idea creators to share their insights within a supportive culture and community. <br><br>
 
 ### The Concept
 

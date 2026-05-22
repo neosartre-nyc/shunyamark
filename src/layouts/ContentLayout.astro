@@ -1,0 +1,34 @@
+---
+// Content Layout
+// ------------
+// Description: A layout for content pages
+// Properties:
+// - frontmatter: The frontmatter of the work page
+
+// Imports
+const { frontmatter } = Astro.props
+
+// Components
+// - Layout
+import Layout from './Layout.astro'
+import Col from '../components/ui/Col.astro'
+import Row from '../components/ui/Row.astro'
+import Section from '../components/ui/Section.astro'
+// - Blocks
+// - UI
+import Card from '../components/ui/cards/Card.astro'
+---
+
+<Layout title={frontmatter.title} description={frontmatter.description}>
+	<!-- Title -->
+	<Section classes="pt-40! pb-0! overflow-visible!">
+		<Row>
+			<Col start="2" span="10">
+				<h1>{frontmatter.title}</h1>
+				<Card>
+					<slot />
+				</Card>
+			</Col>
+		</Row>
+	</Section>
+</Layout>
