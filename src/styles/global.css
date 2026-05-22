@@ -222,7 +222,7 @@ main a {
 }
 blockquote,
 .blockquote {
-	@apply text-3xl leading-12 font-light;
+	@apply text-2xl leading-10 font-light;
 }
 
 ul li,

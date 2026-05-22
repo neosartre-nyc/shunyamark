@@ -22,14 +22,14 @@ It is more critical than just a checkbox because it is the spearhead for the mar
 
 The Colony Of Voice onlyness statement went through an iterative process to reveal a clear niche or space for the brand in the marketplace.
 
-| Iterations |
-| :--- |
-| COV is a public speaking organization. |
-| COV is a public speaking organization in New York. (wait, just NY?) ...in the Northeast Region. |
-| COV is a public speaking organization .... (wait, is it just an organization? a coalition? a group?) ... a participatory venue. |
-| COV ...are doers. (hold on, what does that even mean?) ...enabling idea creators to share their insights (with each other?) within a supportive culture and community. A.k.a. investors or a people who can help. |
+### Iterations
 
-The final result is a combination of purpose and connection where the brand explains the value they bring to the table and appeal to a section of people in the marketplace.
+* COV is a public speaking organization.
+* COV is a public speaking organization in New York. (wait, just NY?) ...in the Northeast Region.
+* COV is a public speaking organization .... (wait, is it just an organization? a coalition? a group?) ... a participatory venue.
+* COV ...are doers. (hold on, what does that even mean?)...enabling idea creators to share their insights (with each other?) within a supportive culture and community. A.k.a. investors or a people who can help.
+
+The final result is a combination of purpose and connection where the brand explains the value they bring to the table and appeal to a segment of people in the marketplace.
 
 ## Voice & Tone
 
@@ -42,50 +42,108 @@ These elements of design are strategic communication and should derived from pur
 The chosen color palette is not just representative of the culture, in it's softness, earthiness, with coolness (achieved with a gray tint), but as what the culture was not. It is not, the corporatized version of societal ideas and solutions painted in bold primary colors.
  
 
-| Color Palettes| | | |
-| --- | --- | --- | --- |
-| ![alt text](/public/assets/images/mdm__ColonyOfVoiceColor.webp) | ![alt text](/public/assets/images/mdm__Toastmasters.webp) | ![alt text](/public//assets/images/mdm__TedTalksColor.webp) | ![alt text](/public/assets/images/mdm__NSA.webp)
-
+<div class="overflow-x-auto shadow-lg rounded-lg border">
+    <table class="min-w-full divide-y divide-neutral-200">
+        <!-- Table Header -->
+        <thead class="bg-neutral-900">
+            <tr>
+                <!-- Column 1: Color Palettes (Header) -->
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-neutral-50 uppercase tracking-wider w-1/4">
+                    Color Palettes
+                </th>
+                <!-- Remaining Columns (Empty headers matching the structure) -->
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-neutral-300 uppercase tracking-wider w-1/4"></th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-neutral-300 uppercase tracking-wider w-1/4"></th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-neutral-300 uppercase tracking-wider w-1/4"></th>
+            </tr>
+        </thead>
+    <!-- Table Body -->
+    <tbody class="bg-neutral-950 divide-y divide-gray-200">
+        <tr>
+            <!-- Cell 1: Image (Color Palettes) -->
+            <td class="px-6 py-4 whitespace-nowrap text-left">
+                <img src="/assets/images/mdm__ColonyOfVoiceColor.webp" alt="Colony of Voice Color">
+            </td>
+            <!-- Cell 2: Image -->
+            <td class="px-6 py-4 whitespace-nowrap text-left">
+                <img src="/assets/images/mdm__Toastmasters.webp" alt="Toastmasters">
+            </td>
+            <!-- Cell 3: Image -->
+            <td class="px-6 py-4 whitespace-nowrap text-left">
+                <img src="/assets/images/mdm__TedTalksColor.webp" alt="Ted Talks Color">
+            </td>
+            <!-- Cell 4: Image -->
+            <td class="px-6 py-4 whitespace-nowrap text-left">
+                <img src="/assets/images/mdm__NSA.webp" alt="NSA">
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
 <br><br>
 
 ### Comparison
 
-<table style="border-collapse: collapse; width: 100%">
-<thead>
-<tr>
-<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Feature</th>
-<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Colony of Voice (Original)</th>
-<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Toastmasters (Cool)</th>
-<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">TED talks (Bold)</th>
-<th style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">NSA(Muted)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top"><strong>Dominant Feel</strong></td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Warm, Earthy, Cozy</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Cool, Minimalist, Calm</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">High Contrast, Dramatic</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Sophisticated, Deep, Muted</td>
-</tr>
-<tr>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top"><strong>Temperature</strong></td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Predominantly Warm</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Predominantly Cool</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Balanced/Aggressive</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Balanced/Deep</td>
-</tr>
-<tr>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top"><strong>Complexity</strong></td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">High (many mixed tones)</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Low (monochromatic)</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">High (extreme contrast)</td>
-<td style="text-align:left; border: 1px solid black; padding: 5px; vertical-align: top">Medium (subtle richness)</td>
-</tr>
-</tbody>
-</table>
-(Google, 2026)
-<br><br>
+<head>
+    <meta charset="UTF-8">
+    <title>Feature Comparison Table</title>
+    <style>
+        /* --- CSS for the entire table --- */
+        .feature-table {
+            width: 100%; /* Ensures the table spans the full available width */
+            border-collapse: collapse; /* Makes borders look clean and connected */
+            margin: 20px 0; /* Adds some space above and below the table */
+        }
+        .feature-table th, .feature-table td {
+            border: 1px solid black; /* Sets the border color */
+            padding: 10px; /* Increases padding for better readability */
+            text-align: left; /* Aligns text to the left */
+            vertical-align: top; /* Ensures content aligns at the top of the cell */
+        }
+        /* Optional: Style for the header row */
+        /* .feature-table thead th {
+            background-color: #f2f2f2; Light grey background for the header */
+        }
+    </style>
+</head>
+<body>
+    <table class="feature-table">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Colony of Voice (Original)</th>
+                <th>Toastmasters (Cool)</th>
+                <th>TED talks (Bold)</th>
+                <th>NSA (Muted)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Dominant Feel</strong></td>
+                <td>Warm, Earthy, Cozy</td>
+                <td>Cool, Minimalist, Calm</td>
+                <td>High Contrast, Dramatic</td>
+                <td>Sophisticated, Deep, Muted</td>
+            </tr>
+            <tr>
+                <td><strong>Temperature</strong></td>
+                <td>Predominantly Warm</td>
+                <td>Predominantly Cool</td>
+                <td>Balanced/Aggressive</td>
+                <td>Balanced/Deep</td>
+            </tr>
+            <tr>
+                <td><strong>Complexity</strong></td>
+                <td>High (many mixed tones)</td>
+                <td>Low (monochromatic)</td>
+                <td>High (extreme contrast)</td>
+                <td>Medium (subtle richness)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+(Google, 2026) <br><br>
 
 Color palettes for websites in the tailwindcss designer philosophy, in consideration of light and dark views as well as the number of elements, has palette definitions that take key colors and gradates them in 11 shades or steps (Colors - Core Concepts, n.d.). These 11 can then be mapped to the types of elements including:
 
