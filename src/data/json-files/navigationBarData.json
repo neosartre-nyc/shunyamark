@@ -5,7 +5,7 @@
 		"alt": "The tailwind astro theme"
 	},
 	"navItems": [
-		{ "name": "Thesis Project (w)", "link": "/solut" },
+		{ "name": "Thesis Project", "link": "/solut" },
 		{ "name": "Collaboration", "link": "/collabs" },
 		{ "name": "Competencies (a)", "link": "/about-v1" },
 		{ "name": "Bibliography", "link": "/biblio" }

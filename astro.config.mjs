@@ -5,6 +5,7 @@ import lottie from "astro-integration-lottie";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
+import mdx from '@astrojs/mdx';
 
 import cloudflare from "@astrojs/cloudflare";
 
@@ -26,6 +27,7 @@ export default defineConfig({
     lottie(),
     react(),
     markdoc(),
+    mdx(),
   ],
 
   image: {

@@ -5,6 +5,9 @@
 		}
 	],
 	"settings": {
-		"workbench.browser.openLocalhostLinks": true
+		"workbench.browser.openLocalhostLinks": true,
+		"cSpell.words": [
+			"wordmarks"
+		]
 	}
 }
