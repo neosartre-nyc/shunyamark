@@ -2,19 +2,32 @@
 import { Content as Solutions } from '../content/markdown/thesisSolutions.md'
 import Layout from '../layouts/Layout.astro'
 import Section from '../components/ui/Section.astro'
+import { YouTube } from 'astro-lazy-youtube-embed'
+
 // - SEO
 const SEO = {
 	title: 'Solution',
-	description:
-		""
+	description: 'Thesis Project'
 }
 ---
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
 	<Layout title={SEO.title} description={SEO.description}>
+		<div>
+			<h1>{SEO.description}</h1>
+		</div>
+		<div class="video-container">
+			<YouTube title="Solution Video" videoId="gDdMzoJP9_s" />
+		</div>
 		<Section>
 			<Solutions class="m-8" />
 		</Section>
-	</Layout>
+	</Layout>	
+</body>
 </html>
