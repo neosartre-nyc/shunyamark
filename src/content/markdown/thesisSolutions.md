@@ -392,7 +392,7 @@ Refinement and finalization processes were crucial in shaping the design. Initia
 
 Upon completion, the Big Oh, Colony Of Voice logo demonstrated potential for versatile animation and integration within brand communications. Notably, it harmonized well with the accompanying wordmark, which featured realigned capital letters to achieve an optimal x-height alignment.
 
-![wordmark](/assets/images/cov_image-03.webp)
+![workdmark](/assets/images/cov_image-03.svg)
 
 ## Brand Media Assets
 
