@@ -372,13 +372,17 @@ To overcome the issue faced in mark-making, a simple yet effective approach was 
 
 ### Selection
 
-The design process for the logo was largely evolutionary rather than iterative, with the hexagonal motif dominating the ideation phase. This narrow focus led to expansion efforts that ultimately proved ineffective. There were too many directions explored and refinement at this point was minimal. A re-approach would put a lot more exporation in much fewer directions.
+The design process for the logo was largely evolutionary rather than iterative, with the hexagonal motif dominating the ideation phase. This narrow focus led to expansion efforts that ultimately proved ineffective. There were too many directions explored and refinement at this point was minimal. A re-approach would put a lot more exploration in much fewer directions.
 
 <img src="/assets/images/cov_image-09.webp" alt="logoSketch" width="900"><br>
 
-However, inspiration from the poster for *Almost Famous* (Crowe, 2000) served as a catalyst for developing a usable visual metaphor. The final result has been dubbed the "Big Oh" and has proven scalable and recognizable, despite not boasting an exceptional level of visual quality. Ultimately, it fulfills the primary purpose of a logo by meeting its functional requirements in various contexts.
+However, inspiration from the poster for *Almost Famous* (Crowe, 2000) served as a catalyst for developing a usable visual metaphor. The final result has been dubbed the "Big Oh" and has proven scalable and recognizable, despite not boasting an exceptional level of visual quality. Ultimately, it fulfills the primary purpose of a logo by meeting its functional requirements in various contexts. <br>
 
 ![versions](/assets/images/cov_image-02.webp)
+
+### Final
+
+Then final review required simplificaton The final logo is:<br> <img src="/assets/images/cov_logoFinal.svg" alt="finalLogo" width="300"><br>
 
 ### Refinement
 
