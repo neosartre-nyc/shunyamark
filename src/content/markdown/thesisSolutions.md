@@ -382,7 +382,7 @@ However, inspiration from the poster for *Almost Famous* (Crowe, 2000) served as
 
 ### Final
 
-Then final review required simplificaton The final logo is:<br> <img src="/assets/images/cov_logoFinal.svg" alt="finalLogo" width="300"><br>
+Then final review required simplification The final logo is:<br> <img src="/assets/images/cov_logoFinal.svg" alt="finalLogo" width="300"><br>
 
 ### Refinement
 
