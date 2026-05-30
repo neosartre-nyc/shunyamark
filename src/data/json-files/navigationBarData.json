@@ -7,7 +7,7 @@
 	"navItems": [
 		{ "name": "Thesis Project", "link": "/solut" },
 		{ "name": "Collaboration", "link": "/collabs" },
-		{ "name": "Competencies (a)", "link": "/about-v1" },
+		{ "name": "Competencies", "link": "/comps" },
 		{ "name": "Bibliography", "link": "/biblio" }
 	],
 	"navActions": [{ "name": "lets talk!", "link": "/contact" }]

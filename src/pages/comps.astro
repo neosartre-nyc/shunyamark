@@ -1,0 +1,90 @@
+---
+// Services Page
+// ------------
+// Description: The services page is a page that displays all the services.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - Blocks
+import Hero from '../components/blocks/hero/CollabGrid.astro'
+import CollabsList from '../components/blocks/comps/CompsList.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import BasicCard from '../components/ui/cards/Card.astro'
+import { YouTube } from 'astro-lazy-youtube-embed'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'MFA | Competencies',
+	description: 'Competencies'
+}
+// - Hero
+const hero = {
+	title: 'Competencies',
+	text: 'In his ignorance..., each person maintains his own arrogant point of view. –Buddha',
+	description: ''
+}
+// - Collabs List
+const collabsList = {
+	title: 'Capable at the nexus of technology, creativity, and communication',
+	text: 'Addressing technological acceleration, evolving consumer behaviors, and shifting business demands.'
+}
+// Video
+// const video = {
+// 	video: 'https://oxygenna-themes.b-cdn.net/toki-astro/videos/about-us-video.mp4'
+// }
+// Brand Slider
+const brandSlider = {
+	title: 'Brands we’ve teamed up with',
+	text: 'From future unicorns to up-and-coming legends, we work with brands that aren’t afraid to make noise.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={hero.title} text={hero.text} description={hero.description} />
+	<div class="video-container">
+		<YouTube title="Collaboration Video" videoId="TILBqmZYq-Y" />
+	</div>
+	<CollabsList title={collabsList.title} text={collabsList.text} />
+	<Section>
+		<Row>
+			<Col span="12" classes="flex justify-left flex-col">
+				<h3>References</h3>
+				<BasicCard decoration="all" style="transparent">
+					<p>
+						Alkahteeb, S. S., Almomani, I. G., Zoubi, M. K., Issa, M. M., Al Smadi, M. A., Jaradat,
+						H. A., & Abualhumos, T. M. (2025). Artificial Intelligence in Graphic Design Processes:
+						The Impact Analysis and Challenges. Journal of Mu’tah Lil-Buḥūth Wad-Dirāsāt: Humanities
+						& Social Sciences Series, 40(1), 35–52. Academic Search Complete (191562826).
+					</p>
+					<p>
+						Felton, G. (2013). Advertising: Concept and copy (Third edition). W.W. Norton & Company.
+					</p>
+					<p>
+						Karjaluoto, E. (2014). The design method: A philosophy and process for functional visual
+						communication. New Riders.
+					</p>
+					<p>
+						Lawes, R. (2023). Using Semiotics in Marketing: How to Achieve Consumer Insight for
+						Brand Growth and Profits (2nd ed). Kogan Page, Limited.
+					</p>
+					<p>
+						Shaw, A., & Colette, J. (2022). Motion Design Toolkit: Principles, practice, and
+						techniques. ROUTLEDGE. https://doi.org/10.4324/9781003200529
+					</p>
+					<p>
+						Talijan, E. (2024). Introduction to Foley sound. Soundtrack, 16(1), 3–10. Academic
+						Search Complete (179696108). https://doi.org/10.1386/ts_00029_2
+					</p>
+					<p>
+						The Purpose and Value of Templates. (2024, October 30).
+						https://copyenglish.com/the-purpose-and-value-of-templates/
+					</p>
+				</BasicCard>
+			</Col>
+		</Row>
+	</Section>
+</Layout>

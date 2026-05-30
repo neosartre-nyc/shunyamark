@@ -36,6 +36,20 @@ const work = defineCollection({
 		})
 	})
 	
+const comps = defineCollection({
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/work' }),
+	schema: () =>
+		z.object({
+			title: z.string(),
+			subtitle: z.string(),
+			description: z.string(),
+			list: z.array(z.string()),
+			imageThumbnail: z.string(),
+			image: z.string().optional(),
+			video: z.string().optional(),
+		})
+	})
+	
 	const blog = defineCollection({
 		loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
 		schema: () =>

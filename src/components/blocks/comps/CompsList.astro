@@ -1,0 +1,56 @@
+---
+// collabs List
+// ------------
+// Description: A collabs section with a title, a subtitle, a description and a grid of collabs
+// Properties:
+// - title: The title of the collabs section
+// - text: The subtitle of the collabs section
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - Blocks
+import TitleSection from '../basic/TitleSection.astro'
+// - UI
+import Card from '../../ui/cards/Card.astro'
+
+// Content
+// - Data
+import collabsData from '../../../data/json-files/compsData.json'
+// - Props
+const { title = '', text = '' } = Astro.props
+---
+
+<TitleSection title={title} text={text} classes="pb-0!" />
+<Section stickyCol classes="overflow-visible! ">
+	{
+		collabsData.map((collab: any, index: number) => (
+			<Row classes="mb-12 ">
+				<Col span="4" classes="h-full min-w-[420px] max-w-[460px] w-full ">
+					<div class="sticky top-32 hidden lg:block">
+						<h3 class="mb-2 flex flex-col justify-start gap-3 text-4xl! md:flex-row lg:text-5xl!">
+							{collab.title}
+						</h3>
+					</div>
+				</Col>
+				<Col span="8" classes="h-full w-full grow">
+					<Card
+						title={collab.title}
+						cardHeaderClasses="block lg:hidden!"``
+						classes="h-full w-full"
+						cardBodyClasses="h-full lg:pt-7.5! "
+						cardMediaClasses="lg:order-2 h-[420px]"
+						orientation="horizontal"
+						image={collab.image}
+					>
+						{collab.text.map((text: string) => (
+							<p class="relative z-10 text-lg">{text}</p>
+						))}
+					</Card>
+				</Col>
+			</Row>
+		))
+	}
+</Section>
