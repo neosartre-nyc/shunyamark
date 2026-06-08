@@ -135,7 +135,7 @@ html {
 	@apply scroll-smooth antialiased;
 }
 body {
-	@apply font-body bg-neutral-50 bg-[url('/bgs/light.webp')] bg-size-[200px] text-base leading-7 text-neutral-950 selection:bg-neutral-950 selection:text-neutral-50 in-[.dark]:text-neutral-600 in-[.light]:text-neutral-950 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:bg-[url('/bgs/dark.webp')] dark:text-neutral-600 dark:selection:bg-neutral-50 dark:selection:text-neutral-950;
+	@apply font-body bg-neutral-50 bg-[url('/bgs/light.webp')] bg-size-[200px] text-lg leading-7 text-neutral-950 selection:bg-neutral-950 selection:text-neutral-50 in-[.dark]:text-neutral-600 in-[.light]:text-neutral-950 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:bg-[url('/bgs/dark.webp')] dark:text-neutral-600 dark:selection:bg-neutral-50 dark:selection:text-neutral-950;
 }
 
 /* Main typography */
@@ -143,7 +143,7 @@ p {
 	@apply mb-6 last:mb-0;
 }
 .text-lead {
-	@apply text-[21px] leading-9 font-light;
+	@apply text-[24px] leading-9 font-light;
 }
 h1,
 .h1,
