@@ -534,7 +534,7 @@ Through careful refinement of both the logo and the accompanying typography, The
 
 ### Style Guide
 
-<iframe src="https://online.fliphtml5.com/Dangerous-Angels-Creative/cov_styleGuide_final/" width="900" height="637" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br><br>
+<iframe src="https://online.fliphtml5.com/Dangerous-Angels-Creative/behance_cov_styleGuide-Gkqz" width="900" height="637" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br><br>
 
 ### Brochure
 
@@ -587,6 +587,6 @@ Parsley, S., & Acevedo, B. (2026). Pieces of me, letters from us: Collage-making
 
 Rafael, L. (2022, August 19). Line Symbolism: A Guide to What Different Lines Represent. The Shutterstock Blog. https://www.shutterstock.com/blog/the-psychology-of-lines
 
-Reuchlein, F. (1999). Brazil SAP R/3 Implementation \[PowerPoint slides]. Unpublished manuscript.
+Reuchlein, F. (1999). Brazil SAP R/3 Implementation \[PowerPoint slides]. Unpublished manuscript.``
 
 The Double-Edged Sword of Conformity: When Fitting In Becomes Detrimental - PsyForU Research International. (2025, June 16). https://psyforu.com/the-double-edged-sword-of-conformity-when-fitting-in-becomes-detrimental/
